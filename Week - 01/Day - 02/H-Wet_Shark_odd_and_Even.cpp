@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
 int main(){
     ios::sync_with_stdio(false);
@@ -10,6 +11,7 @@ int main(){
         cin>>arr[i];
         sum +=arr[i];
     }
+    sort(arr,arr+n,greater<int>());
     if(sum%2==0){
         cout<<sum;
     }else{
